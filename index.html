@@ -76,9 +76,9 @@
         function computerMovement(){
           var paddle2YCenter = paddle2Y + (PADDLE2_HEIGHT/2);
           if (paddle2YCenter < ballY - 35) {
-            paddle2Y += 1;
+            paddle2Y += 7;
           }else if (paddle2YCenter > ballY + 35){
-            paddle2Y -= 1;
+            paddle2Y -= 7;
           }
         }
 
@@ -98,7 +98,7 @@
               var deltaY = ballY - (paddle2Y+PADDLE2_HEIGHT/2);
               ballSpeedY = deltaY * 0.35;
             }else {
-              player1Score += 8;
+              player1Score += 1;
               ballReset();
             }
           }
@@ -109,7 +109,7 @@
               var deltaY = ballY - (paddle1Y+PADDLE_HEIGHT/2);
               ballSpeedY = deltaY * 0.35;
             }else {
-              player2Score += 8;
+              player2Score += 1;
               ballReset();
             }
           }
